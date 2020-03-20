@@ -4,7 +4,7 @@
 
     在windows环境下进行springboot的开发,由于电脑卡死后,将idea进程杀掉后.
 
-   然后再次运行springboot,一直提示端口被占用(如9090,8091)
+   然后再次运行springboot,一直提示端口被占用(如8190)
 
 2. 分析原因
 
@@ -15,7 +15,7 @@
    - 查找是否存在占用该端口
 
      ```bash
-     netstat -nao |findstr "9090"
+     netstat -nao |findstr "8190"
      #查找是否存在8190
      #C:\Users\ds>netstat -nao |findstr "8190"
      #  TCP    0.0.0.0:8190           0.0.0.0:0              LISTENING       31792
